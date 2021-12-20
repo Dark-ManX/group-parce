@@ -31,6 +31,7 @@ fill:  #000000;
 transition: fill 250ms linear;
  }
 .link-partners:hover .logo-partners,
-.link-partners:focus .logo-partners {
+.link-partners:focus-within .logo-partners {
 fill: #03B3A1;
+// ? border-color: hidden;
  }
