@@ -1,36 +1,44 @@
-.partners-ship {
+.partners {
     background:#FFFFFF;
     text-align: center;
     padding-top: 27px;
     padding-bottom: 31px;
 }
-.partners {
+.partners__title {
 font-weight: 600;
 font-size: 40px;
 line-height: 1.5;
 color: #223939;
 margin-bottom: 16px;
 }
-.text-partners {
+.partners__text {
 font-size  : 24px;
 line-height: 1.5;
 color: #000000;
 opacity: 0.3;
 margin-bottom: 40px;
  }
- .partner-list {
+ .partners__list {
 display: flex;
 margin-left: 120px;
 margin-right: 120px;
  }
- .link-partners:not(:last-child) {
+ .partners__element:not(:last-child) {
 margin-right: 110px;
  }
- .logo-partners {
+ .partners__logo {
 fill:  #000000;
 transition: fill 250ms linear;
  }
-.link-partners:hover .logo-partners,
-.link-partners:focus-within .logo-partners {
+.partners__link {
+    display: inline-block;
+    transition: border 250ms linear;
+}
+.partners__link:hover .partners__logo,
+.partners__link:focus-within .partners__logo {
 fill: #03B3A1;
  }
+.partners__link:focus-within {
+    border: 2px solid #03B3A1;
+    outline: none;
+}
