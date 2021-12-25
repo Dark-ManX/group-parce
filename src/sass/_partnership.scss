@@ -33,12 +33,11 @@ transition: fill 250ms linear;
 .partners__link {
     display: inline-block;
     transition: border 250ms linear;
-}
-.partners__link:hover .partners__logo,
-.partners__link:focus-within .partners__logo {
-fill: #03B3A1;
- }
-.partners__link:focus-within {
+    &:hover .partners__logo,
+    &:focus-within .partners__logo {
+    fill: #03B3A1;}
+    &:focus-within {
     border: 2px solid #03B3A1;
-    outline: none;
+    outline: none;}
 }
+
