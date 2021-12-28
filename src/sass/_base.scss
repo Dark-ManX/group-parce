@@ -1,6 +1,6 @@
 body {
   background-color: orange;
-  font-style: 'Poppins';
+  font-family: 'Poppins';
 }
 h1,
 h2,
@@ -19,4 +19,7 @@ li {
 }
 .container {
   padding: 0 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
