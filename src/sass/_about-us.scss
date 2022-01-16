@@ -1,12 +1,6 @@
 
-.container-flex {
-  display: flex;
-  width: 1320px;
-  height: 630px;
-  display: flex;
-  background: #F7F9FD;
-}
 .about-us__img {
+
   width: 480px;
   height: 550px;
   border-radius: 24px;
@@ -14,12 +8,17 @@
 
 .about-us-box{
  display: flex;
-  
+ width: 1320px;
+ height: 630px;
+ display: flex;
+ padding: 40px 120px 40px 120px;
+ background: #F7F9FD; 
 }
+
 .about-us-info {
   padding-left: 96px;
+  }
   
-}
 .about-us__header {
   padding-top: 80px;
   padding-bottom: 0px;
