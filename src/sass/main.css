@@ -34,6 +34,8 @@ li {
 
 .header {
   height: 78px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -98,16 +100,25 @@ li {
 }
 
 .header-item:first-child {
-  margin-left: 585px;
+  margin-left: 580px;
 }
 
 .header-item:last-child {
   margin-right: 58px;
 }
 
+.hero-box {
+  display: none;
+}
+
 .hero {
-  background-color: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: #c4c4c4;
   max-width: 1440px;
+  height: 750px;
   margin: 0 auto;
 }
 
@@ -121,13 +132,18 @@ li {
 
 .hero-name {
   margin: auto;
+  margin-top: 90px;
   margin-right: 120px;
   width: 621px;
   height: 150px;
 }
 
 .hero-button {
-  margin: 304px 120px 72px 1113px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 120px;
+  margin-bottom: 74px;
   font-size: 20px;
   line-height: 1.5;
   width: 207px;
@@ -245,10 +261,6 @@ li {
   background-color: #fff;
 }
 
-.item:not(:last-child) {
-  margin-right: 24px;
-}
-
 .atw-card-title {
   margin-bottom: 4px;
   font-family: 'Poppins';
@@ -288,14 +300,21 @@ li {
   opacity: 0.5;
 }
 
-.container-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1320px;
-  height: 630px;
-  display: flex;
-  background: #F7F9FD;
+.slick-next {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.slick-prev {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.atw-icon {
+  width: 100%;
+  height: 100%;
 }
 
 .about-us__img {
@@ -308,6 +327,11 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 1320px;
+  height: 630px;
+  display: flex;
+  padding: 40px 120px 40px 120px;
+  background: #F7F9FD;
 }
 
 .about-us-info {
@@ -386,6 +410,10 @@ li {
           align-items: center;
 }
 
+.packeges__img {
+  border-radius: 24px;
+}
+
 .packeges__content {
   margin-left: 96px;
 }
@@ -434,6 +462,15 @@ li {
   cursor: pointer;
   outline: none;
   border: none;
+  -webkit-transition: -webkit-box-shadow 250ms linear;
+  transition: -webkit-box-shadow 250ms linear;
+  transition: box-shadow 250ms linear;
+  transition: box-shadow 250ms linear, -webkit-box-shadow 250ms linear;
+}
+
+.packeges__button:hover, .packeges__button:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .packeges__text {
@@ -447,12 +484,11 @@ li {
 }
 
 .articles {
-  background-color: tomato;
   margin-top: 40px;
 }
 
 .container {
-  width: 1200px;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 100px;
@@ -488,10 +524,21 @@ li {
 
 .slick-list__number {
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px solid #04A493;
+  -webkit-text-stroke: 2px #04A493;
   font-weight: 700;
   font-size: 80px;
   line-height: 1.5;
+}
+
+.slick-list__number::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 239px;
+  width: 0px;
+  height: 140px;
+  border: 1px solid #AAAAAA;
 }
 
 .country-title {
@@ -514,7 +561,6 @@ li {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: -100px;
 }
 
 .first-country-img {

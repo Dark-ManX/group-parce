@@ -6,7 +6,9 @@
 .packeges>.container {
   display: flex;
   align-items: center;
-  
+}
+.packeges__img {
+  border-radius: 24px
 }
 .packeges__content {
   margin-left: 96px;
@@ -52,6 +54,14 @@ margin-top: 40px;
 cursor: pointer;
 outline: none;
 border: none;
+transition : box-shadow 250ms linear;
+
+&:hover,
+&:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 }
 .packeges__text {
   margin-bottom: 24px;
