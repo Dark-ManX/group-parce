@@ -1,5 +1,7 @@
 .header {
   height: 78px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .logo {
   font-family: Poppins;
@@ -50,7 +52,7 @@
   margin-right: 40px;
 }
 .header-item:first-child {
-  margin-left: 585px;
+  margin-left: 580px;
 }
 .header-item:last-child {
   margin-right: 58px;
