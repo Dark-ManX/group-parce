@@ -1,6 +1,31 @@
-.about-us {
+
+.container-flex {
+  display: flex;
+  width: 1320px;
+  height: 630px;
+  display: flex;
+  background: #F7F9FD;
+}
+.about-us__img {
+  width: 480px;
+  height: 550px;
+  border-radius: 24px;
+}
+
+.about-us-box{
+ display: flex;
+  
+}
+.about-us-info {
+  padding-left: 96px;
+  
+}
+.about-us__header {
+  padding-top: 80px;
+  padding-bottom: 0px;
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 16px;
   color: rgba(0, 0, 0, 0.3);
 }
 .best-service {
@@ -8,16 +33,38 @@
   font-size: 40px;
   line-height: 1.5;
   color: #223939;
+  margin-bottom: 16px;
 }
 .paragraph {
-  font-weight: normal;
+  width: 428px;
+  height: 96px;
   font-size: 14px;
   line-height: 32px;
+  margin-bottom: 40px;
   color: rgba(0, 0, 0, 0.3);
 }
-.customer {
+.flex {
+ display: flex;
+}
+.customer-li {
+
   font-weight: 600;
   font-size: 40px;
   line-height: 60px;
   color: #04a493;
+}
+.customer-li:not(:last-child) {
+  margin-right: 114px;
+}
+.customer-span {
+  width: 98px;
+  height: 60px;
+  padding-bottom: 8px;
+}
+.customer-p {
+  width: 166px;
+  height: 21px;
+  font-size: 14px;
+line-height: 1.5;
+color: rgba(0, 0, 0, 0.3);
 }
