@@ -1,6 +1,12 @@
+.hero-box {
+  display: none;
+}
 .hero {
-  background-color: yellow;
+  display: flex;
+  position: relative;
+  background-color: #c4c4c4;
   max-width: 1440px;
+  height: 750px;
   margin: 0 auto;
 }
 .hero-title {
@@ -12,12 +18,17 @@
 }
 .hero-name {
   margin: auto;
+  margin-top: 90px;
   margin-right: 120px;
   width: 621px;
   height: 150px;
 }
 .hero-button {
-  margin: 304px 120px 72px 1113px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 120px;
+  margin-bottom: 74px;
   font-size: 20px;
   line-height: 1.5;
   width: 207px;
