@@ -10,20 +10,49 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <!-- <include src="./partials/example.html"></include> -->
     <include src="./partials/header.html"></include>
-        <include src="./partials/hero.html"></include>
-        <include src="./partials/partnership.html"></include>
-        <include src="./partials/around-the-world.html"></include>
-        <include src="./partials/about-us.html"></include>
-        <include src="./partials/packeges.html"></include>
-        <include src="./partials/articles.html"></include>
-        <include src="./partials/footer.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/partnership.html"></include>
+    <include src="./partials/around-the-world.html"></include>
+    <include src="./partials/about-us.html"></include>
+    <include src="./partials/packeges.html"></include>
+    <include src="./partials/articles.html"></include>
+    <include src="./partials/footer.html"></include>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $('.slider-for').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav',
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true,
+      });
+    </script>
   </body>
 </html>

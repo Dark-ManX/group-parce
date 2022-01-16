@@ -35,6 +35,7 @@
   justify-content: center;
 }
 .around-us .item {
+  min-width: 282px;
   padding: 15px;
   background-color: #fff;
 }
@@ -44,6 +45,12 @@
 }
 .atw-card-title {
   margin-bottom: 4px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.005em;
 }
 .card-name {
   margin-bottom: 5px;
@@ -60,7 +67,6 @@
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.005em;
-
   color: #04a493;
 }
 .card-text {
