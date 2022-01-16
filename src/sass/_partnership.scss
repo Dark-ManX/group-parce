@@ -5,6 +5,11 @@
     padding-top: 27px;
     padding-bottom: 31px;
 }
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .partners__title {
 font-weight: 600;
 font-size: 40px;
@@ -21,13 +26,9 @@ margin-bottom: 40px;
  }
  .partners__list {
 display: flex;
-margin-left: 120px;
-margin-right: 120px;
-justify-content: center;
+justify-content: space-between;
  }
-//  .partners__element:not(:last-child) {
-// margin-right: 110px;
-//  }
+
  .partners__logo {
 fill:  #000000;
 transition: fill 250ms linear;
