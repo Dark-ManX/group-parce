@@ -5,7 +5,7 @@
  */
 body {
   background-color: orange;
-  font-style: 'Poppins';
+  font-family: 'Poppins';
 }
 
 h1,
@@ -27,6 +27,9 @@ li {
 
 .container {
   padding: 0 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
@@ -137,12 +140,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 120px;
-  margin-right: 120px;
-}
-
-.partners__element:not(:last-child) {
-  margin-right: 110px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .partners__logo {
@@ -167,6 +167,29 @@ button {
   outline: none;
 }
 
+.around-us__img {
+  width: 250px;
+  height: 270px;
+  display: block;
+  margin-bottom: 14px;
+  border-radius: 24px;
+}
+
+.section {
+  background-color: #fff;
+  padding-top: 125px;
+  padding-bottom: 96px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .section-title {
   font-family: 'Poppins';
   font-style: normal;
@@ -174,7 +197,60 @@ button {
   font-size: 24px;
   line-height: 1.5;
   text-align: center;
-  color: red;
+  color: black;
+  margin-bottom: 20px;
+  opacity: 0.3;
+}
+
+.around-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.around-us .item {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.atw-card-title {
+  margin-bottom: 4px;
+}
+
+.card-name {
+  margin-bottom: 5px;
+  color: #000;
+  opacity: 0.5;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.005em;
+}
+
+.card-price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.005em;
+  color: #04a493;
+}
+
+.card-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.005em;
+  color: #000;
+  opacity: 0.5;
 }
 
 .about-us {
@@ -208,7 +284,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #AAAAAA;
+  color: #223939;
 }
 
 .footer {
