@@ -1,5 +1,5 @@
 .articles {
-    background-color: teal;
+    background-color: tomato;
     margin-top: 40px;
 }
 
@@ -17,7 +17,7 @@ width: 501px;
 margin-bottom: 52px;
 }
 
-.title__name {
+.articles__name {
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -34,16 +34,16 @@ margin-bottom: 16px;
     color: #223939;
 }
 
-.slick-list {
+.slick-list__label {
     margin-left: 100px;
 }
 
 .slick-list__number {
-    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px solid #04A493;
+    font-weight: 700;
     font-size: 80px;
     line-height: 1.5;
-    color: white;
-    border: 2px solid #04A493;
 }
 
 .country-title {
