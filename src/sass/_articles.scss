@@ -1,10 +1,10 @@
 .articles {
-    background-color: tomato;
+    // background-color: tomato;
     margin-top: 40px;
 }
 
 .container {
-    width: 1200px;
+    width: 1230px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 100px;
@@ -40,10 +40,21 @@ margin-bottom: 16px;
 
 .slick-list__number {
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px solid #04A493;
+    -webkit-text-stroke: 2px #04A493;
     font-weight: 700;
     font-size: 80px;
     line-height: 1.5;
+}
+
+.slick-list__number::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 239px;
+    width: 0px;
+    height: 140px;
+    border: 1px solid #AAAAAA;
 }
 
 .country-title {
@@ -64,7 +75,6 @@ margin-bottom: 16px;
 .img-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -100px;
 }
 
 // .first-country-img {
